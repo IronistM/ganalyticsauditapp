@@ -1,7 +1,7 @@
 ganalyticsauditapp
 ==================
 
-Status: In Development
+*Status*: In Development
 
 This is a shiny application that can be used to audit
 
@@ -9,4 +9,12 @@ This is a shiny application that can be used to audit
 * Google Analytics
 * Other marketing tags (will be available in later stages)
 
-Note: This tool will load each URL in headless browser at the backend and check for network log i.e. GTM & Google Analytics post request and provide a report instead of checking the page source of each pag
+Note: This tool will load each URL in headless browser at the backend and check for network log i.e. GTM & Google Analytics post request and provide a report instead of checking the page source of each page.
+
+## Prerequisite
+
+You'll need to have phantomJS installed. If not, you can run the script `phantomjs.sh` in your terminal
+
+```bash
+$ sh phantomjs.sh
+```
