@@ -104,6 +104,7 @@ getDashboard <- function(data){
 # Get analytics details
 getAnalyticsData <- function(data){
   getPageviews <- subset(data, grepl("(t=pageview)|(utmt=pageview)",NetLog))
+  # TODO: Add event details as well!
   output <- data.frame(Url = character(0),
                        Title = character(0),
                        Type = character(0), 
